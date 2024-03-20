@@ -41,7 +41,7 @@ WORKDIR /xmage
 
 COPY ./mage-server/ ./xmage/mage-server/
 
-COPY dockerStartServer.sh /xmage/mage-server/
+COPY dockerStartServer.sh ./xmage/mage-server/
 # 
 # RUN chmod +x \
 #     /xmage/mage-server/startServer.sh \
