@@ -39,7 +39,7 @@ RUN set -ex && \
 #Following code based on Dockerfile from goesta/docker-xmage-alpine 
 WORKDIR /xmage
 
-COPY ./mage-server/ ./xmage/mage-server/
+COPY mage-server/ /xmage/mage-server/
 
 COPY dockerStartServer.sh ./xmage/mage-server/
 
