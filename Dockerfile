@@ -45,9 +45,9 @@ COPY dockerStartServer.sh ./xmage/mage-server/
 
 RUN ls ./xmage/mage-server
 
-RUN chmod +x \
-    /xmage/mage-server/startServer.sh \
-    /xmage/mage-server/dockerStartServer.sh
+# RUN chmod +x \
+#     /xmage/mage-server/startServer.sh \
+#     /xmage/mage-server/dockerStartServer.sh
 
 EXPOSE 17171 17179
 
