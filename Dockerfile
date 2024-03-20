@@ -49,6 +49,4 @@ RUN ls mage-server/lib
 
 EXPOSE 17171 17179
 
-WORKDIR mage_server
-
-CMD [ "java", "-jar", "lib/mage-server-1.4.50.jar" ]
+CMD [ "dockerStartServer.sh ]
