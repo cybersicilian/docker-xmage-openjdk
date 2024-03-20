@@ -43,7 +43,7 @@ COPY . .
 
 COPY dockerStartServer.sh .
 
-RUN ls ./lib
+RUN ls mage-server/lib
 
 # RUN chmod +x \
 #     /xmage/mage-server/startServer.sh \
@@ -51,4 +51,4 @@ RUN ls ./lib
 
 EXPOSE 17171 17179
 
-CMD [ "./dockerStartServer.sh" ]
+CMD [ "dockerStartServer.sh" ]
