@@ -51,4 +51,4 @@ EXPOSE 17171 17179
 
 WORKDIR mage_server
 
-RUN [ "java", "-jar", "lib/mage-server-1.4.50.jar" ]
+CMD [ "java", "-jar", "lib/mage-server-1.4.50.jar" ]
