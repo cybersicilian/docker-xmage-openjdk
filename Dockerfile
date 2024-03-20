@@ -37,8 +37,6 @@ RUN set -ex && \
     /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib
  
 #Following code based on Dockerfile from goesta/docker-xmage-alpine 
-WORKDIR /xmage
-
 COPY . .
 
 COPY dockerStartServer.sh .
@@ -53,4 +51,4 @@ EXPOSE 17171 17179
 
 WORKDIR mage_server
 
-CMD [ "java", "-jar", "lib/mage-server-1.4.50.jar" ]
+RUN [ "java", "-jar", "lib/mage-server-1.4.50.jar" ]
