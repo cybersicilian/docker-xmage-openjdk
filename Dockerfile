@@ -39,11 +39,11 @@ RUN set -ex && \
 #Following code based on Dockerfile from goesta/docker-xmage-alpine 
 WORKDIR /xmage
 
-COPY mage-server/ /xmage/mage-server/
+COPY . .
 
-COPY dockerStartServer.sh ./xmage/mage-server/
+COPY dockerStartServer.sh .
 
-RUN ls ./xmage/mage-server
+RUN ls ./lib
 
 # RUN chmod +x \
 #     /xmage/mage-server/startServer.sh \
@@ -51,4 +51,4 @@ RUN ls ./xmage/mage-server
 
 EXPOSE 17171 17179
 
-CMD [ "./xmage/mage-server/dockerStartServer.sh" ]
+CMD [ "./dockerStartServer.sh" ]
