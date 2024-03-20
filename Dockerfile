@@ -51,6 +51,4 @@ RUN ls ./xmage/mage-server
 
 EXPOSE 17171 17179
 
-WORKDIR /xmage/mage-server
-
-CMD [ "./dockerStartServer.sh" ]
+CMD [ "./xmage/mage-server/dockerStartServer.sh" ]
