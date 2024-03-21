@@ -49,4 +49,4 @@ RUN ls mage-server/lib
 
 EXPOSE 17171 17179
 
-CMD [ "dockerStartServer.sh ]
+CMD [ "dockerStartServer.sh" ]
