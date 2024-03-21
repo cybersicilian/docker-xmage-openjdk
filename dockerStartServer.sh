@@ -1,6 +1,6 @@
 #!/bin/sh
 
-XMAGE_CONFIG=mage-server/config/config.xml
+XMAGE_CONFIG=config/config.xml
 
 sed -i -e "s#\(serverAddress=\)[\"].*[\"]#\1\"$XMAGE_DOCKER_SERVER_ADDRESS\"#g" ${XMAGE_CONFIG}
 sed -i -e "s#\(serverName=\)[\"].*[\"]#\1\"$XMAGE_DOCKER_SERVER_NAME\"#g" ${XMAGE_CONFIG}
