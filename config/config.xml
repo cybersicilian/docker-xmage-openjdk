@@ -32,7 +32,7 @@
     mailPassword        - passworf of the used user to send the mail
     mailFromAddress     - sender address
     -->
-    <server serverAddress="0.0.0.0"
+    <server serverAddress="146.190.135.147"
             serverName="mage-server"
             port="17171"
             secondaryBindPort="-1"
