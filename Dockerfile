@@ -41,8 +41,6 @@ COPY . .
 
 COPY dockerStartServer.sh .
 
-RUN ls mage-server/lib
-
 # RUN chmod +x \
 #     /xmage/mage-server/startServer.sh \
 #     /xmage/mage-server/dockerStartServer.sh
