@@ -1,0 +1,58 @@
+<h1>XMage — Magic, Another Game Engine</h1>
+<p><a href="https://app.travis-ci.com/magefree/mage"><img src="https://app.travis-ci.com/magefree/mage.svg?branch=master" alt="Build Status" /></a> <a href="https://sonarcloud.io/summary/new_code?id=magefree_mage"><img src="https://sonarcloud.io/api/project_badges/measure?project=magefree_mage&amp;metric=ncloc" alt="Lines of Code" /></a> <a href="https://sonarcloud.io/summary/new_code?id=magefree_mage"><img src="https://sonarcloud.io/api/project_badges/measure?project=magefree_mage&amp;metric=coverage" alt="Coverage" /></a> <a href="https://sonarcloud.io/summary/new_code?id=magefree_mage"><img src="https://sonarcloud.io/api/project_badges/measure?project=magefree_mage&amp;metric=sqale_index" alt="Technical Debt" /></a> <a href="https://github.com/magefree/mage/releases/"><img src="https://img.shields.io/github/v/release/magefree/mage" alt="latest release" /></a> <a href="https://github.com/magefree/mage/commits/"><img src="https://img.shields.io/github/commits-since/magefree/mage/latest" alt="commints since latest release" /></a> <a href="https://gitter.im/magefree/mage?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/magefree/mage" /></a></p>
+<p>XMage allows you to play Magic against one or more online players or computer opponents. It includes full rules enforcement for over <strong>25 000</strong> unique cards and more than 65 000 reprints from different editions. You can also find custom sets like Star Wars. All regular sets have nearly all implemented cards.</p>
+<p>It supports single matches and tournaments with dozens of game modes like duel, multiplayer, standard, modern, commander, pauper, oathbreaker, historic, freeform, richman and much more.</p>
+<p>Local server supports a <a href="https://github.com/magefree/mage/wiki/Development-Testing-Tools">special test mode</a> for testing combos and other game situations with pre-defined conditions.</p>
+<p>There are <a href="http://xmage.today/servers/">public servers</a> where you can play XMage against other players. You can also host your own server to play against the AI and/or your friends.</p>
+<p>XMage community and resources: * <a href="https://github.com/magefree/mage/issues">Official XMage support and feature request on github</a>; * <a href="http://www.slightlymagic.net/forum/viewforum.php?f=70">Official XMage forum</a> (outdated); * <a href="https://www.reddit.com/r/XMage/">Reddit XMage group</a>; * <a href="https://discord.gg/Pqf42yn">Reddit XMage discord channel</a>; * <a href="https://github.com/magefree/mage/commits/master">Latest changes</a>; * <a href="https://jaydi85.github.io/xmage-web-news/news.html">Latest news</a>; * <a href="https://github.com/magefree/mage/releases">Latest releases</a>; * <a href="https://github.com/magefree/mage/wiki">Project documentation</a>.</p>
+<p>Servers status: * http://xmage.today/servers/ (temporarily out of service)</p>
+<p>Beta server with un-released or under development features: * http://xmage.today/ (release version)</p>
+<h2>Features</h2>
+<ul>
+<li>Multiplatform app: Windows, Linux, MacOS;</li>
+<li>Deck editor (support multiple deck formats and deck sources);</li>
+<li>Two player duel or a multiplayer free-for-all game with up to 10 players;</li>
+<li>Computer AI opponents;</li>
+<li>Players rating system (Glicko);</li>
+<li>Supports special formats like Commander (up to 10 players), Oathbreaker, Cube, Tiny Leaders, Super Standard, Historic Standard and more;</li>
+<li>Single matches or tournaments supported (elimination or swiss type handling), which can be played with up to 16 players:
+<ul>
+<li>Booster (also Cube) draft tournaments (4-16)</li>
+<li>Sealed (also from Cube) tournaments (2-16)</li>
+</ul>
+</li>
+</ul>
+<h2>Bug report / feature request</h2>
+<p>The best way to report bug or feature request is <a href="https://github.com/magefree/mage/issues">github's issues page</a>.</p>
+<h2>Installation / running</h2>
+<ul>
+<li>Download <a href="http://xmage.today/">latest XMage launcher and app files</a> and un-pack it to any folder like <code>D:\games\xmage</code>;</li>
+<li>You need to have <a href="http://java.com/">Java version 8 or later</a> to run launcher.</li>
+</ul>
+<p><a href="https://github.com/magefree/mage/wiki">Wiki page</a> contains detail information about private or public server setup.</p>
+<h3>Server options</h3>
+<p>The XMage server locates by default the configuration file from the current working directory to the relative path <code>config/config.xml</code> (<code>config\config.xml</code> in Windows). To change this location, start the server with the property <code>xmage.config.path</code> set to the desired location, for example <code>-Dxmage.config.path=config/otherconfig.xml</code>. The option can be set from the XMageLauncher in <code>Settings &gt; Java &gt; Server java options</code>.</p>
+<h2>Troubleshooting / FAQ</h2>
+<p>Github issues page contain <a href="https://github.com/magefree/mage/issues?q=is%3Aissue+label%3AFAQ+">popular problems and fixes</a>: * <a href="https://github.com/magefree/mage/issues/4461#issuecomment-361108597">Any: program freezes on startup (white/blue/black screen)</a>; * <a href="https://www.reddit.com/r/XMage/comments/agmcjf/new_xmage_release_with_ravnica_allegiance_rna/">Any: can't download images or it stops after some time</a>; * <a href="https://github.com/magefree/mage/issues/1272#issuecomment-529789018">Any: can't run client, could not open ...jvm.cfg</a>; * <a href="https://github.com/magefree/mage/issues/4126">Any: no texts or small buttons in launcher</a>; * <a href="https://github.com/magefree/mage/issues/4626#issuecomment-374640070">Windows: ugly cards, buttons or other GUI drawing artifacts</a>; * <a href="https://github.com/magefree/mage/issues/8406#issuecomment-1011720728">MacOS: can't run on M1/M2</a>; * <a href="https://www.reddit.com/r/XMage/comments/kf8l34/updated_java_on_osx_xmage_not_working/ggej8cq/">MacOS: can't open launcher</a>; * <a href="https://github.com/magefree/mage/issues/4920#issuecomment-517944308">MacOS: client freezes in GUI (on connect dialog, on new match)</a>; * <a href="https://github.com/magefree/mage/issues/11611#issuecomment-1879385151">Linux: run on non-standard OS or hardware like Raspberry Pi</a>; * <a href="https://github.com/magefree/mage/issues/11611#issuecomment-1879396921">Linux: ugly GUI and drawing artifacts</a>;</p>
+<h2>Performance tweaks</h2>
+<p>If you have a good GPU, it's very likely you'll be able to increase performance by <strong>a lot</strong> through extra Java flags.</p>
+<p>XMage runs on JRE 8, so <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/2d/flags.html">this link</a> should give you the available flags.</p>
+<h3>How to enable the extra flags</h3>
+<ol>
+<li>Launch XMage</li>
+<li>In the menu bar from the launcher, click on &quot;Settings&quot;, which will open up the Settings Window</li>
+<li>Go to the &quot;Java&quot; tab</li>
+<li>You can pass extra flags by editing the &quot;Client java options&quot; text field</li>
+</ol>
+<h3>Linux tweaks</h3>
+<h4>Enable OpenGL</h4>
+<p>More info about <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/2d/flags.html#opengl">OpenGL</a>: * <code>-Dsun.java2d.opengl=true</code></p>
+<p>Possible problems: * <em><strong>Caveat</strong></em>: <a href="https://bugs.openjdk.java.net/browse/JDK-6545140">There's a bug</a> with the file chooser when OpenGL is enabled (you use the file chooser when you, for instance, try to load a deck from disk). The <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6439320">suggested workaround</a> will make the game crash, so it's not an option. * <em><strong>Workaround</strong></em>: When using <a href="https://github.com/i3/i3">i3</a>, you're able to work around the bug by toggling the &quot;floating&quot; capabilities of the window and forcing it to re-render.</p>
+<h4>Enable XRender</h4>
+<p>More info about <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/2d/flags.html#xrender">XRender</a>: * <code>-Dsun.java2d.xrender=true</code></p>
+<h4>Increase memory usage</h4>
+<p>This is not guaranteed to yield improvements, but it depends on your use-case. If you have a lot of RAM to spare, you can increase the initial heap size for good measure. More details about <a href="https://stackoverflow.com/a/57839720/8401696">memory settings</a>: * <code>-Xms1G -Xmx2G</code></p>
+<h2>Developer</h2>
+<p>Full project documentation and instructions for developers can be found in <a href="http://github.com/magefree/mage/wiki/">wiki pages</a>.</p>
+<p>First steps for Xmage's developers: * <a href="https://github.com/magefree/mage/wiki/Setting-up-your-Development-Environment">Setting up your Development Environment</a> * <a href="https://github.com/magefree/mage/wiki/Development-Testing-Tools">Development Testing Tools</a> * <a href="https://github.com/magefree/mage/wiki/Development-Workflow">Development Workflow</a> * <a href="https://github.com/magefree/mage/wiki/Development-HOWTO-Guides">Development HOWTO Guides</a></p>
+<p><a href="https://www.flaticon.com/free-icons/torch">Torch icons created by Freepik - Flaticon</a></p>
